@@ -1,0 +1,830 @@
+﻿프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+로그 파싱을 시작합니다...
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
+[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.
+이 형식의 CollectionView에서는 발송자 스레드와 다른 스레드에서의 해당 SourceCollection에 대한 변경 내용을 지원하지 않습니다.
+   위치: System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   위치: System.Collections.ObjectModel.ObservableCollection`1.ClearItems()
+   위치: ffxiv_chatlogger.Logger.FindFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 90
+   위치: ffxiv_chatlogger.Logger.ResetFFXIVProcess() 파일 C:\Users\Karsei\Desktop\PROJECT\[GIT]\ffxiv-chatlogger\ffxiv-chatlogger\Logger.cs:줄 168
+프로세스를 찾는 중...
+FFXIV 프로세스를 찾을 수 없습니다!
