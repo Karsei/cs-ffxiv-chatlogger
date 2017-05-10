@@ -313,7 +313,7 @@ namespace ffxiv_chatlogger
         ********************************************/
         private static bool CheckMessage(byte[] rawData)
         {
-            Console.WriteLine("발견 타입 - {0}", BitConverter.ToInt16(rawData, 4));
+            //Console.WriteLine("발견 타입 - {0}", BitConverter.ToInt16(rawData, 4));
             // 메세지에서 4번째의 항목(채팅 메세지 구분)을 정수로 반환
             return ChatType.TypeList.ContainsKey(BitConverter.ToInt16(rawData, 4));
         }
@@ -367,16 +367,26 @@ namespace ffxiv_chatlogger
             // 번역 항목에 포함되어있다면?
             if (CheckTransMessage(typeObj))
             {
-                var src = (Translate)ChatOption.op_apiSourceLang.SelectedItem;
-                var dest = (Translate)ChatOption.op_apiDestLang.SelectedItem;
-                Func<Task<string>> transFunc = new Func<Task<string>>(() => Translate.Run(
-                    ((TranslateServiceList)ChatOption.op_listAPIService.SelectedItem), 
-                    text, 
-                    src.GetCode, 
-                    dest.GetCode
-                ));
-                var s = Task<Task<string>>.Factory.StartNew(transFunc);
-                text = s.Result.Result;
+                var src = Settings.globalSetting.sourceLang;
+                var dest = Settings.globalSetting.destLang;
+                
+                try
+                {
+                    Func<Task<string>> transFunc = new Func<Task<string>>(() => Translate.Run(
+                        TranslateServiceList.TypeList[Settings.globalSetting.selectAPIService],
+                        text,
+                        src,
+                        dest
+                    ));
+                    var s = Task<Task<string>>.Factory.StartNew(transFunc);
+                    text = s.Result.Result;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("[오류] 번역 메세지 전달하는 과정에서 오류가 발생했습니다.");
+                    Console.WriteLine(e.Message);
+                    Console.WriteLine(e.StackTrace.ToString());
+                }
             }
 
             return new Chat(typeObj, string.Format(typeObj.GetFormat, dateTime.Hour, dateTime.Minute, charName, text, type - 0xf));

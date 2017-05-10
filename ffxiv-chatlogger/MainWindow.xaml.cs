@@ -13,6 +13,7 @@ using System.ComponentModel;
 using System.Runtime.InteropServices;
 using MahApps.Metro.Controls;
 using System.Windows.Interop;
+using static ffxiv_chatlogger.Settings;
 
 namespace ffxiv_chatlogger
 {
@@ -32,6 +33,7 @@ namespace ffxiv_chatlogger
         private bool m_listIsBottom = false;
 
         public static MainWindow Instance { get; private set; }
+        private static Settings sett = new Settings();
 
         /****************************************************
          * DLL 기본
@@ -62,8 +64,12 @@ namespace ffxiv_chatlogger
 
             InitializeComponent();
 
+            // 설정 로드
+            sett.Load();
+
             // 배경 투명 허용 (대신 최대화할 때 이상하게 동작함)
             this.AllowsTransparency = true;
+            this.Opacity = Settings.globalSetting.windowOpacity / 100;
 
             // 로드 후 이벤트 설정
             this.Loaded += new RoutedEventHandler(Window_Loaded);
@@ -105,6 +111,7 @@ namespace ffxiv_chatlogger
                 WinForms.MenuItem item_about = new WinForms.MenuItem();
                 WinForms.MenuItem item_sep = new WinForms.MenuItem();
                 WinForms.MenuItem item_sep2 = new WinForms.MenuItem();
+                WinForms.MenuItem item_clear = new WinForms.MenuItem();
 
                 // 항목 추가
                 item_sep.Index = 1;
@@ -124,6 +131,11 @@ namespace ffxiv_chatlogger
                     {
                         this.Visibility = Visibility.Visible;
                     }
+                    else
+                    {
+                        this.Show();
+                        this.WindowState = WindowState.Normal;
+                    }
                 };
 
                 item_top.Index = 0;
@@ -142,6 +154,13 @@ namespace ffxiv_chatlogger
                         this.Topmost = true;
                         this.m_hookHwnd = NativeMethods.SetWinEventHook(NativeMethods.EVENT_SYSTEM_FOREGROUND, NativeMethods.EVENT_SYSTEM_FOREGROUND, IntPtr.Zero, this.m_hookProc, 0, 0, NativeMethods.WINEVENT_SKIPOWNPROCESS | NativeMethods.WINEVENT_OUTOFCONTEXT);
                     }
+                };
+
+                item_clear.Index = 0;
+                item_clear.Text = "내용 비우기";
+                item_clear.Click += delegate (object click, EventArgs eClick)
+                {
+                    Logger.ChatLog.Clear();
                 };
 
                 item_option.Index = 0;
@@ -174,6 +193,7 @@ namespace ffxiv_chatlogger
                 menu.MenuItems.Add(item_show);
                 menu.MenuItems.Add(item_sep2);
                 menu.MenuItems.Add(item_top);
+                menu.MenuItems.Add(item_clear);
                 menu.MenuItems.Add(item_option);
                 menu.MenuItems.Add(item_sep);
                 menu.MenuItems.Add(item_about);

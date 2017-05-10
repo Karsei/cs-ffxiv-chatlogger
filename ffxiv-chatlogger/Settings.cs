@@ -20,6 +20,7 @@ namespace ffxiv_chatlogger
             public string googleAPIKey;
             public string sourceLang;
             public string destLang;
+            public bool? enableTransService;
             //public ICollection<ChatType> chatFilter;
             //public ICollection<ChatType> transFilter;
         }
@@ -29,6 +30,7 @@ namespace ffxiv_chatlogger
         }
 
         private const string DEFAULT_SETTING_FILE = @"\ffxiv_chatlogger_settings.json";
+        public static SettingFile globalSetting;
 
         public void Save(SettingFile sf)
         {
@@ -37,31 +39,34 @@ namespace ffxiv_chatlogger
 
             string json = new JavaScriptSerializer().Serialize(sf);
             File.WriteAllText(Environment.CurrentDirectory + DEFAULT_SETTING_FILE, json);
+
+            globalSetting = sf;
         }
 
         public SettingFile Load()
         {
-            SettingFile sf = new SettingFile();
+            globalSetting = new SettingFile();
 
             if (File.Exists(Environment.CurrentDirectory + DEFAULT_SETTING_FILE))
             {
                 string json = File.ReadAllText(Environment.CurrentDirectory + DEFAULT_SETTING_FILE);
-                sf = new JavaScriptSerializer().Deserialize<SettingFile>(json);
+                globalSetting = new JavaScriptSerializer().Deserialize<SettingFile>(json);
             }
             else
             {
-                sf.windowOpacity = 100.0;
-                sf.selectAPIService = 0;
-                sf.naverClientKey = "";
-                sf.naverSecretKey = "";
-                sf.googleAPIKey = "";
-                sf.sourceLang = "ko";
-                sf.destLang = "ja";
+                globalSetting.windowOpacity = 100.0;
+                globalSetting.selectAPIService = 0;
+                globalSetting.naverClientKey = "";
+                globalSetting.naverSecretKey = "";
+                globalSetting.googleAPIKey = "";
+                globalSetting.sourceLang = "ko";
+                globalSetting.destLang = "ja";
+                globalSetting.enableTransService = false;
                 //sf.transFilter = ChatType.TypeList.Values;
 
-                this.Save(sf);
+                this.Save(globalSetting);
             }
-            return sf;
+            return globalSetting;
         }
     }
 }

@@ -41,21 +41,44 @@ namespace ffxiv_chatlogger
             settFormat = sett.Load();
             this.op_slOpacity.Value = settFormat.windowOpacity;
             this.op_listAPIService.SelectedIndex = settFormat.selectAPIService;
+
+            HiddenControl();
             foreach (var item in TranslateServiceList.TypeList)
             {
+                if (this.op_listAPIService.SelectedIndex == item.Value.GetId)
+                {
+                    if (item.Value.GetCode.Equals("naver"))
+                    {
+                        this.op_APIKey_Label.Visibility = Visibility.Visible;
+                        this.op_APISecretKey_Label.Visibility = Visibility.Visible;
+
+                        this.op_APIKey_Naver.Visibility = Visibility.Visible;
+                        this.op_APISecretKey.Visibility = Visibility.Visible;
+                    }
+                    else if (item.Value.GetCode.Equals("google"))
+                    {
+                        this.op_APIKey_Label.Visibility = Visibility.Visible;
+
+                        this.op_APIKey_Google.Visibility = Visibility.Visible;
+                    }
+                }
+
                 if (item.Value.GetCode.Equals("naver"))
                 {
                     item.Value.ClientKey = settFormat.naverClientKey;
                     item.Value.SecretKey = settFormat.naverSecretKey;
-                    this.op_APIKey.Text = settFormat.naverClientKey;
+
+                    this.op_APIKey_Naver.Text = settFormat.naverClientKey;
                     this.op_APISecretKey.Text = settFormat.naverSecretKey;
                 }
                 else if (item.Value.GetCode.Equals("google"))
                 {
                     item.Value.ClientKey = settFormat.googleAPIKey;
-                    this.op_APIKey.Text = settFormat.googleAPIKey;
+
+                    this.op_APIKey_Google.Text = settFormat.googleAPIKey;
                 }
             }
+            this.op_APISwitch.IsChecked = settFormat.enableTransService;
         }
 
         public void ApplyOpacity()
@@ -69,6 +92,15 @@ namespace ffxiv_chatlogger
             }
         }
 
+        private void HiddenControl()
+        {
+            this.op_APIKey_Label.Visibility = Visibility.Hidden;
+            this.op_APISecretKey_Label.Visibility = Visibility.Hidden;
+            this.op_APIKey_Naver.Visibility = Visibility.Hidden;
+            this.op_APIKey_Google.Visibility = Visibility.Hidden;
+            this.op_APISecretKey.Visibility = Visibility.Hidden;
+        }
+
         private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             ApplyOpacity();
@@ -79,7 +111,6 @@ namespace ffxiv_chatlogger
             if (this.op_chatFilter.SelectedItem != null)
             {
                 Logger.ChatFilterTransLog.Add((ChatType)this.op_chatFilter.SelectedItem);
-                Logger.ChatFilterLog.Remove((ChatType)this.op_chatFilter.SelectedItem);
             }
         }
 
@@ -87,15 +118,32 @@ namespace ffxiv_chatlogger
         {
             if (this.op_chatTransFilter.SelectedItem != null)
             {
-                Logger.ChatFilterLog.Add((ChatType)this.op_chatTransFilter.SelectedItem);
                 Logger.ChatFilterTransLog.Remove((ChatType)this.op_chatTransFilter.SelectedItem);
             }
         }
 
         private void op_listAPIService_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
-            this.op_APIKey.Text = ((TranslateServiceList)this.op_listAPIService.SelectedItem).ClientKey;
-            this.op_APISecretKey.Text = ((TranslateServiceList)this.op_listAPIService.SelectedItem).SecretKey;
+            HiddenControl();
+            if (((TranslateServiceList)this.op_listAPIService.SelectedItem).GetCode.Equals("naver"))
+            {
+                this.op_APIKey_Label.Visibility = Visibility.Visible;
+                this.op_APISecretKey_Label.Visibility = Visibility.Visible;
+
+                this.op_APIKey_Naver.Visibility = Visibility.Visible;
+                this.op_APISecretKey.Visibility = Visibility.Visible;
+
+                this.op_APIKey_Naver.Text = ((TranslateServiceList)this.op_listAPIService.SelectedItem).ClientKey;
+                this.op_APISecretKey.Text = ((TranslateServiceList)this.op_listAPIService.SelectedItem).SecretKey;
+            }
+            else if (((TranslateServiceList)this.op_listAPIService.SelectedItem).GetCode.Equals("google"))
+            {
+                this.op_APIKey_Label.Visibility = Visibility.Visible;
+
+                this.op_APIKey_Google.Visibility = Visibility.Visible;
+
+                this.op_APIKey_Google.Text = ((TranslateServiceList)this.op_listAPIService.SelectedItem).ClientKey;
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -106,23 +154,20 @@ namespace ffxiv_chatlogger
             {
                 if (item.Value.GetCode.Equals("naver"))
                 {
-                    settFormat.naverClientKey = this.op_APIKey.Text;
+                    settFormat.naverClientKey = this.op_APIKey_Naver.Text;
                     settFormat.naverSecretKey = this.op_APISecretKey.Text;
                 }
                 else if (item.Value.GetCode.Equals("google"))
                 {
-                    settFormat.googleAPIKey = this.op_APIKey.Text;
+                    settFormat.googleAPIKey = this.op_APIKey_Google.Text;
                 }
             }
 
             settFormat.sourceLang = ((Translate)this.op_apiSourceLang.SelectedItem).GetCode;
             settFormat.destLang = ((Translate)this.op_apiDestLang.SelectedItem).GetCode;
-            //settFormat.chatFilter = Logger.ChatFilterLog;
-            //settFormat.transFilter = Logger.ChatFilterTransLog;
+            settFormat.enableTransService = this.op_APISwitch.IsChecked;
 
             sett.Save(settFormat);
-
-            MessageBox.Show("설정이 저장되었습니다.");
 
             this.Hide();
         }

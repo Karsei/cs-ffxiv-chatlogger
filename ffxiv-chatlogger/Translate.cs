@@ -44,7 +44,7 @@ namespace ffxiv_chatlogger
         {
             try
             {
-                if (service.GetName.Equals("google"))
+                if (service.GetCode.Equals("google"))
                 {
                     /**************
                      * Google API를 이용하려면 사용료를 지불해야함
@@ -65,7 +65,7 @@ namespace ffxiv_chatlogger
                         MessageBox.Show(translation.TranslatedText);
                     }*/
                 }
-                else if (service.GetName.Equals("naver"))
+                else if (service.GetCode.Equals("naver"))
                 {
                     string url = "https://openapi.naver.com/v1/language/translate";
                     HttpWebRequest req = (HttpWebRequest)WebRequest.Create(url);
