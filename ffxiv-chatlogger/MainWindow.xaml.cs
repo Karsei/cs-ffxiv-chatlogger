@@ -14,6 +14,7 @@ using System.Runtime.InteropServices;
 using MahApps.Metro.Controls;
 using System.Windows.Interop;
 using static ffxiv_chatlogger.Settings;
+using System.Reflection;
 
 namespace ffxiv_chatlogger
 {
@@ -23,17 +24,17 @@ namespace ffxiv_chatlogger
     public partial class MainWindow : MetroWindow
     {
         //private DispatcherTimer timer;
-        private WinForms.NotifyIcon notify;
+        //private WinForms.NotifyIcon notify;
         private bool m_isExplicitClose = false;
-        private IntPtr m_hookHwnd;
-        private NativeMethods.WinEventDelegate m_hookProc;
+        //private IntPtr m_hookHwnd;
+        //private NativeMethods.WinEventDelegate m_hookProc;
 
         private readonly ICollectionView m_chatList;
 
         private bool m_listIsBottom = false;
 
         public static MainWindow Instance { get; private set; }
-        private static Settings sett = new Settings();
+        //private static Settings sett = new Settings();
 
         /****************************************************
          * DLL 기본
@@ -48,11 +49,19 @@ namespace ffxiv_chatlogger
             [DllImport("user32.dll")]
             public static extern bool UnhookWinEvent(IntPtr hWinEventHook);
 
+            [DllImport("user32.dll")]
+            public static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int X, int Y, int cx, int cy, uint uFlags);
+
+            [DllImport("user32.dll")]
+            public static extern IntPtr FindWindow(String lpClassName, String lpWindowName);
+
             // 항상 위 관련
             public const int EVENT_SYSTEM_FOREGROUND = 3;
             public const int WINEVENT_OUTOFCONTEXT = 0;
             public const int WINEVENT_SKIPOWNPROCESS = 2;
             public const int HWND_TOPMOST = -1;
+            public const int SWP_SHOWWINDOW = 0x0040;
+            public const int SWP_HIDEWINDOW = 0x0080;
         }
 
         /****************************************************
@@ -61,11 +70,10 @@ namespace ffxiv_chatlogger
         public MainWindow()
         {
             Instance = this;
-
             InitializeComponent();
 
             // 설정 로드
-            sett.Load();
+            Settings.Load();
 
             // 배경 투명 허용 (대신 최대화할 때 이상하게 동작함)
             this.AllowsTransparency = true;
@@ -93,17 +101,13 @@ namespace ffxiv_chatlogger
                 // 시스템 트레이
                 WinForms.ContextMenu menu = new System.Windows.Forms.ContextMenu();
 
-                // 트레이 아이콘
-                notify = new WinForms.NotifyIcon();
-                notify.Icon = ffxiv_chatlogger.Properties.Resources.hp_notepad2_pencil;
-                notify.Visible = true;
-                notify.DoubleClick += delegate (object senders, EventArgs args)
+                Logger.notify.DoubleClick += delegate (object senders, EventArgs args)
                 {
                     this.Show();
                     this.WindowState = WindowState.Normal;
                 };
-                notify.ContextMenu = menu;
-                notify.Text = "FFXIV Chat Logger";
+                Logger.notify.ContextMenu = menu;
+
                 WinForms.MenuItem item_exit = new WinForms.MenuItem();
                 WinForms.MenuItem item_show = new WinForms.MenuItem();
                 WinForms.MenuItem item_option = new WinForms.MenuItem();
@@ -146,13 +150,17 @@ namespace ffxiv_chatlogger
                     {
                         item_top.Checked = false;
                         this.Topmost = false;
-                        NativeMethods.UnhookWinEvent(this.m_hookHwnd);
+
+                        //NativeMethods.SetWindowPos(NativeMethods.FindWindow("Shell_traywnd", ""), IntPtr.Zero, 0, 0, 0, 0, NativeMethods.SWP_SHOWWINDOW);
+                        //NativeMethods.UnhookWinEvent(this.m_hookHwnd);
                     }
                     else
                     {
                         item_top.Checked = true;
                         this.Topmost = true;
-                        this.m_hookHwnd = NativeMethods.SetWinEventHook(NativeMethods.EVENT_SYSTEM_FOREGROUND, NativeMethods.EVENT_SYSTEM_FOREGROUND, IntPtr.Zero, this.m_hookProc, 0, 0, NativeMethods.WINEVENT_SKIPOWNPROCESS | NativeMethods.WINEVENT_OUTOFCONTEXT);
+
+                        //NativeMethods.SetWindowPos(NativeMethods.FindWindow("Shell_traywnd", ""), IntPtr.Zero, 0, 0, 0, 0, NativeMethods.SWP_HIDEWINDOW);
+                        //this.m_hookHwnd = NativeMethods.SetWinEventHook(NativeMethods.EVENT_SYSTEM_FOREGROUND, NativeMethods.EVENT_SYSTEM_FOREGROUND, IntPtr.Zero, this.m_hookProc, 0, 0, NativeMethods.WINEVENT_SKIPOWNPROCESS | NativeMethods.WINEVENT_OUTOFCONTEXT);
                     }
                 };
 
@@ -160,7 +168,11 @@ namespace ffxiv_chatlogger
                 item_clear.Text = "내용 비우기";
                 item_clear.Click += delegate (object click, EventArgs eClick)
                 {
-                    Logger.ChatLog.Clear();
+                    lock (Logger.ChatLog)
+                    {
+                        Logger.ChatLog.Clear();
+                        GC.Collect();
+                    }
                 };
 
                 item_option.Index = 0;
@@ -204,9 +216,8 @@ namespace ffxiv_chatlogger
                 timer.Interval = new TimeSpan(0, 0, 2);
                 timer.Tick += new EventHandler(timer_Tick);
                 timer.Start();*/
-                notify.BalloonTipTitle = "FFXIV Chat Logger";
-                notify.BalloonTipText = "시스템 트레이에서 이용할 수 있습니다!";
-                notify.ShowBalloonTip(1000);
+                Logger.notify.BalloonTipText = "시스템 트레이에서 이용하세요.";
+                Logger.notify.ShowBalloonTip(1000);
             }
             catch
             {
@@ -214,9 +225,9 @@ namespace ffxiv_chatlogger
         }
         private void timer_Tick(object sender, EventArgs e)
         {
-            notify.BalloonTipTitle = "FFXIV Chat Logger";
-            notify.BalloonTipText = "시스템 트레이에서 이용할 수 있습니다!";
-            notify.ShowBalloonTip(1000);
+            //notify.BalloonTipTitle = "FFXIV Chat Logger";
+            //notify.BalloonTipText = "시스템 트레이에서 이용할 수 있습니다!";
+            //notify.ShowBalloonTip(1000);
         }
 
         /****************************************************
@@ -261,8 +272,11 @@ namespace ffxiv_chatlogger
 
         private void MetroWindow_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            BaseMethod.ReleaseCapture();
-            BaseMethod.SendMessage(new WindowInteropHelper(this).Handle, BaseMethod.WM_NCLBUTTONDOWN, BaseMethod.HT_CAPTION, 0);
+            if (e.ButtonState == System.Windows.Input.MouseButtonState.Pressed)
+            {
+                BaseMethod.ReleaseCapture();
+                BaseMethod.SendMessage(new WindowInteropHelper(this).Handle, BaseMethod.WM_NCLBUTTONDOWN, BaseMethod.HT_CAPTION, 0);
+            }
         }
     }
 }

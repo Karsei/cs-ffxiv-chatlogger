@@ -9,7 +9,7 @@ using System.Windows;
 
 namespace ffxiv_chatlogger
 {
-    internal class Settings
+    internal static class Settings
     {
         public class SettingFile
         {
@@ -25,14 +25,10 @@ namespace ffxiv_chatlogger
             //public ICollection<ChatType> transFilter;
         }
 
-        public Settings()
-        {
-        }
-
         private const string DEFAULT_SETTING_FILE = @"\ffxiv_chatlogger_settings.json";
         public static SettingFile globalSetting;
 
-        public void Save(SettingFile sf)
+        public static void Save(SettingFile sf)
         {
             if (File.Exists(Environment.CurrentDirectory + DEFAULT_SETTING_FILE))
                 File.Delete(Environment.CurrentDirectory + DEFAULT_SETTING_FILE);
@@ -43,7 +39,7 @@ namespace ffxiv_chatlogger
             globalSetting = sf;
         }
 
-        public SettingFile Load()
+        public static SettingFile Load()
         {
             globalSetting = new SettingFile();
 
@@ -64,7 +60,7 @@ namespace ffxiv_chatlogger
                 globalSetting.enableTransService = false;
                 //sf.transFilter = ChatType.TypeList.Values;
 
-                this.Save(globalSetting);
+                Save(globalSetting);
             }
             return globalSetting;
         }

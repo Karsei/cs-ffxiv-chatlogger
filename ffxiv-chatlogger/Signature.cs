@@ -49,9 +49,7 @@ namespace ffxiv_chatlogger
 
         public IntPtr Scan(Process targetProcess, IntPtr targetProcessHnd)
         {
-            Console.WriteLine("프로세스 - {0}:{1}", targetProcess.ProcessName, targetProcess.Id);
             // 메모리 패턴을 16진수 바이트로 표현
-            Console.WriteLine("패턴을 찾습니다... - {0}", this.Pattern);
             var patArr = GetPatternArray(this.Pattern);
 
             // 메모리 범위 파악
@@ -104,9 +102,7 @@ namespace ffxiv_chatlogger
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("[오류] 포인터를 찾는 도중에 오류가 발생했습니다.");
-                    Console.WriteLine(e.Message);
-                    Console.WriteLine(e.StackTrace.ToString());
+                    LogWriter.Error("포인터를 찾는 도중에 오류가 발생했습니다.", e);
                 }
             }
 

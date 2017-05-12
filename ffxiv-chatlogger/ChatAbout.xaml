@@ -10,12 +10,13 @@
         ShowMinButton="False"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
-        Title="정보" Height="128" Width="330"
+        Title="정보" Height="194.452" Width="330"
         
         BorderBrush="{DynamicResource AccentColorBrush}"
         BorderThickness="1">
     <Grid>
-        <Label Content="FFXIV CHAT LOGGER" HorizontalAlignment="center" VerticalAlignment="center" Margin="99,25,99,46"/>
-        <Label Content="ⓒ 2017 Karsei" HorizontalAlignment="center" VerticalAlignment="Top" Margin="115,56,118,0"/>
+        <Label Content="FFXIV CHAT LOGGER (v1.0)" HorizontalAlignment="center" VerticalAlignment="center" Margin="83,39,81,98" Width="158"/>
+        <Label FontSize="10" Content="마우스의 모든 버튼을 클릭하면 이동됩니다." HorizontalAlignment="center" VerticalAlignment="center" Margin="60,75,53,64" Width="209" Height="24"/>
+        <Label Content="ⓒ 2017 Karsei" HorizontalAlignment="center" VerticalAlignment="Top" Margin="116,114,117,0"/>
     </Grid>
 </Controls:MetroWindow>

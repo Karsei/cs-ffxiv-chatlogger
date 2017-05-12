@@ -6,10 +6,11 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
+using WinForms = System.Windows.Forms;
 
 namespace ffxiv_chatlogger
 {
-    internal static class Logger
+    internal class Logger
     {
         // 시그네쳐
         private static readonly Signature SigX64 = new Signature(
@@ -34,9 +35,9 @@ namespace ffxiv_chatlogger
         public static ObservableCollection<ChatType> ChatFilterLog              = new ObservableCollection<ChatType>();
         public static ObservableCollection<ChatType> ChatFilterTransLog         = new ObservableCollection<ChatType>();
         // 스레드 작업
-        private static readonly ManualResetEvent Work                       = new ManualResetEvent(false);
+        private static readonly ManualResetEvent Work                           = new ManualResetEvent(false);
 
-        private static readonly DateTime BaseTimeStamp                      = new DateTime(1970, 1, 1, 0, 0, 0);
+        private static readonly DateTime BaseTimeStamp                          = new DateTime(1970, 1, 1, 0, 0, 0);
 
         // 메모리 관련
         private static Signature    m_memPattern;
@@ -51,11 +52,18 @@ namespace ffxiv_chatlogger
         // 운영체제 비트 여부
         private static bool         m_isX64;
 
-        public static readonly ChatOption ChatOption;
+        public static WinForms.NotifyIcon notify;
 
         [STAThread]
         public static void Init()
         {
+            // 트레이 아이콘
+            notify = new WinForms.NotifyIcon();
+            notify.Icon = ffxiv_chatlogger.Properties.Resources.hp_notepad2_pencil;
+            notify.Visible = true;
+            notify.BalloonTipTitle = "FFXIV 채팅 수집기";
+            notify.Text = "FFXIV 채팅 수집기";
+
             // FFXIV 프로세스 찾기
             FindFFXIVProcess();
 
@@ -88,7 +96,7 @@ namespace ffxiv_chatlogger
         {
             // 프로세스 목록 초기화
             ProcessList.Clear();
-            Console.WriteLine("프로세스를 찾는 중...");
+            LogWriter.Info("프로세스를 찾는 중...");
 
             // 프로세스 범위 추가
             var ffxivPrc = new List<Process>();
@@ -97,21 +105,33 @@ namespace ffxiv_chatlogger
 
             if (ffxivPrc.Count == 0)
             {
-                Console.WriteLine("FFXIV 프로세스를 찾을 수 없습니다!");
+                //notify.BalloonTipText = "FFXIV 프로세스를 찾을 수 없어 30초 후에 다시 시도합니다.";
+                //notify.ShowBalloonTip(1000);
+                LogWriter.Info("FFXIV 프로세스를 찾을 수 없습니다!");
             }
             else if (ffxivPrc.Count > 1)
             {
-                Console.WriteLine("FFXIV 프로세스가 2개 이상이므로 직접 프로세스를 설정하시기 바랍니다.");
+                notify.BalloonTipText = "FFXIV 프로세스가 2개 이상이므로 직접 프로세스를 설정하시기 바랍니다.";
+                notify.ShowBalloonTip(1000);
+                LogWriter.Info("FFXIV 프로세스가 2개 이상이므로 직접 프로세스를 설정하시기 바랍니다.");
+                foreach (var process in ffxivPrc)
+                    using (process)
+                        ProcessList.Add(string.Format("{0}:{1}", process.ProcessName, process.Id));
             }
             else
             {
-                Console.WriteLine("FFXIV 프로세스를 찾았습니다! 설정을 시작합니다...");
+                notify.BalloonTipText = "FFXIV 프로세스를 발견했습니다!";
+                notify.ShowBalloonTip(1000);
+                LogWriter.Info("FFXIV 프로세스를 찾았습니다! 설정을 시작합니다...");
                 SetFFXIVProcess(ffxivPrc[0]);
             }
         }
 
         private static void SetFFXIVProcess(Process process)
         {
+            if (m_mainProcess != null)
+                m_mainProcess.Dispose();
+
             try
             {
                 // 주 프로세스 설정
@@ -134,25 +154,22 @@ namespace ffxiv_chatlogger
 
                     // 프로세스 이름 설정
                     string procName = string.Format("{0}:{1}", m_mainProcess.ProcessName, m_mainProcess.Id);
-                    Console.WriteLine("FFXIV 프로세스 선택됨: {0}", procName);
+                    LogWriter.Info("FFXIV 프로세스가 선택되었습니다 - {0}", procName);
 
                     // 프로세스 목록 초기화
                     ProcessList.Clear();
                     ProcessList.Add(procName);
-
-                    // '옵션' 창의 프로세스 목록에 추가
-                    ChatOption.op_listProcess.SelectedIndex = 0;
                 }
                 else
                 {
-                    Console.WriteLine("메모리 패턴을 찾는데 실패했습니다.");
+                    notify.BalloonTipText = "메모리 패턴을 찾는데 실패했습니다.";
+                    notify.ShowBalloonTip(1000);
+                    LogWriter.Info("메모리 패턴을 찾는데 실패했습니다.");
                 }
             }
             catch (Exception e)
             {
-                Console.WriteLine("[오류] 프로세스를 설정하는 과정에서 오류가 발생했습니다.");
-                Console.WriteLine(e.Message);
-                Console.WriteLine(e.StackTrace.ToString());
+                LogWriter.Error("프로세스를 설정하는 과정에서 오류가 발생했습니다.", e);
             }
         }
 
@@ -163,21 +180,16 @@ namespace ffxiv_chatlogger
                 // 주 프로세스 초기화
                 m_mainProcess = null;
                 Work.Reset();
-
-                // 프로세스 다시 찾기
-                FindFFXIVProcess();
             }
             catch (Exception e)
             {
-                Console.WriteLine("[오류] 프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.");
-                Console.WriteLine(e.Message);
-                Console.WriteLine(e.StackTrace.ToString());
+                LogWriter.Error("프로세스를 다시 설정하는 과정에서 오류가 발생했습니다.", e);
             }
         }
 
         private static void ParsingLog()
         {
-            Console.WriteLine("로그 파싱을 시작합니다...");
+            LogWriter.Info("로그 파싱을 시작합니다...");
 
             IntPtr  offsetStart,
                     offsetEnd,
@@ -187,6 +199,7 @@ namespace ffxiv_chatlogger
             int[] buffer = new int[0xfa0];  // 4000
 
             int len, num = 0;
+            int i, j;
             bool flag = false;
 
             IntPtr zero = IntPtr.Zero;
@@ -222,7 +235,7 @@ namespace ffxiv_chatlogger
                         {
                             if ((zero != IntPtr.Zero) && (zero != IntPtr.Zero))
                             {
-                                for (int j = num; j < 0x3e8; j++) // 1000
+                                for (j = num; j < 0x3e8; j++) // 1000
                                 {
                                     // 4바이트씩 주소를 올려서 정수값 반환
                                     buffer[j] = ReadInt32(ptr + (j * 4));
@@ -243,7 +256,6 @@ namespace ffxiv_chatlogger
                                             IntPtr.Add(offsetStart, j == 0 ? 0 : buffer[j - 1]),
                                             length
                                         );
-                                        Console.WriteLine("메세지: {0}", message);
                                         if (CheckMessage(message))
                                             data.Add(message);
                                     }
@@ -269,7 +281,7 @@ namespace ffxiv_chatlogger
 
                         // 길이 포인터를 정수로 반환 후 4바이트로 나눔
                         len = (int)(offsetLenEnd.ToInt64() - offsetLenStart.ToInt64()) / 4;
-                        for (int i = num; i < len; i++)
+                        for (i = num; i < len; i++)
                         {
                             // 4바이트씩 주소를 올려서 정수값 반환
                             buffer[i] = ReadInt32(offsetLenStart + (i * 4));
@@ -288,10 +300,11 @@ namespace ffxiv_chatlogger
                         {
                             // 채팅 메세지 작업 시작!
                             Task.Factory.StartNew(RawToChatMessage, data.ToArray());
+
                             // 그리고 기존 데이터는 비움
                             data.Clear();
                         }
-
+                        
                         // 간격 0.2초 기다림
                         Thread.Sleep(200);
                     }
@@ -299,9 +312,7 @@ namespace ffxiv_chatlogger
             }
             catch (Exception e)
             {
-                Console.WriteLine("[오류] 파싱하는 과정에서 오류가 발생했습니다.");
-                Console.WriteLine(e.Message);
-                Console.WriteLine(e.StackTrace.ToString());
+                LogWriter.Error("파싱하는 과정에서 오류가 발생했습니다.", e);
             }
         }
 
@@ -326,7 +337,11 @@ namespace ffxiv_chatlogger
         ********************************************/
         private static bool CheckTransMessage(ChatType type)
         {
-            return ChatFilterTransLog.Contains(type);
+            bool enable = Settings.globalSetting.enableTransService.HasValue ? Settings.globalSetting.enableTransService.Value : false;
+            if (enable)
+                return ChatFilterTransLog.Contains(type);
+            else
+                return false;
         }
 
         private static void RawToChatMessage(object arg)
@@ -338,11 +353,9 @@ namespace ffxiv_chatlogger
 
             var arr = new Chat[rawData.Length];
             for (int i = 0; i < rawData.Length; ++i)
-            {
                 arr[i] = ParseChat(rawData[i]);
 
-                App.Current.Dispatcher.Invoke(new Action<Chat[]>(AddChatMessage), (object)arr);
-            }
+            App.Current.Dispatcher.Invoke(new Action<Chat[]>(AddChatMessage), (object)arr);
         }
 
         private static Chat ParseChat(byte[] rawData)
@@ -383,9 +396,7 @@ namespace ffxiv_chatlogger
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("[오류] 번역 메세지 전달하는 과정에서 오류가 발생했습니다.");
-                    Console.WriteLine(e.Message);
-                    Console.WriteLine(e.StackTrace.ToString());
+                    LogWriter.Error("번역 메세지 전달하는 과정에서 오류가 발생했습니다.", e);
                 }
             }
 

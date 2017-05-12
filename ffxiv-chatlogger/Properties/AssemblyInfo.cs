@@ -10,9 +10,9 @@ using System.Windows;
 [assembly: AssemblyTitle("FFXIV CHAT LOGGER")]
 [assembly: AssemblyDescription("파이널 판타지 14 채팅 수집기")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Karsei")]
 [assembly: AssemblyProduct("FFXIV CHAT LOGGER")]
-[assembly: AssemblyCopyright("Copyright © Karsei 2017")]
+[assembly: AssemblyCopyright("Copyright © 2017 Karsei")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

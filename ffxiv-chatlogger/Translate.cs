@@ -98,12 +98,12 @@ namespace ffxiv_chatlogger
             }
             catch (Exception e)
             {
-                Console.WriteLine("[오류] 번역 과정에서 오류가 발생했습니다.");
-                Console.WriteLine(e.Message);
-                Console.WriteLine(e.StackTrace.ToString());
+                Logger.notify.BalloonTipText = "번역에 오류가 발생했습니다. 자세한 사항은 로그를 참고하세요.";
+                Logger.notify.ShowBalloonTip(1000);
+                LogWriter.Error("번역 과정에서 오류가 발생했습니다.", e);
             }
 
-            return "";
+            return "(번역 오류 발생)";
         }
     }
 }

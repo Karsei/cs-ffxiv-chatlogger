@@ -9,8 +9,7 @@ namespace ffxiv_chatlogger
     /// </summary>
     public partial class ChatOption : MetroWindow
     {
-        private static Settings sett = new Settings();
-        private static SettingFile settFormat = new SettingFile();
+        private static SettingFile settFormat = Settings.globalSetting;
 
         public ChatOption()
         {
@@ -38,7 +37,7 @@ namespace ffxiv_chatlogger
             this.op_chatTransFilter.ItemsSource = Logger.ChatFilterTransLog;
 
             // 설정 로드
-            settFormat = sett.Load();
+            settFormat = Settings.Load();
             this.op_slOpacity.Value = settFormat.windowOpacity;
             this.op_listAPIService.SelectedIndex = settFormat.selectAPIService;
 
@@ -167,7 +166,7 @@ namespace ffxiv_chatlogger
             settFormat.destLang = ((Translate)this.op_apiDestLang.SelectedItem).GetCode;
             settFormat.enableTransService = this.op_APISwitch.IsChecked;
 
-            sett.Save(settFormat);
+            Settings.Save(settFormat);
 
             this.Hide();
         }

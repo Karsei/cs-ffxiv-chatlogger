@@ -8,12 +8,14 @@
         mc:Ignorable="d"
         
         WindowStartupLocation="CenterScreen"
-        PreviewMouseLeftButtonDown="MetroWindow_MouseDown"
+        MouseDown="MetroWindow_MouseDown"
         ShowTitleBar="False"
         ShowMinButton="False"
         ShowMaxRestoreButton="False"
+        ShowInTaskbar="False"
         ShowCloseButton="False"
         Background="Black"
+        WindowStyle="None"
         Title="FFXIV 채팅 수집" Height="400" Width="600">
     <ScrollViewer x:Name="svChatLog"
                   Background="Black"

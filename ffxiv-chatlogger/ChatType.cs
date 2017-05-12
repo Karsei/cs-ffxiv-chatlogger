@@ -50,8 +50,8 @@ namespace ffxiv_chatlogger
             { 0x0016, new ChatType(0x0016, ChatFormat_LS,       "#d4ff7d", "링크셸 7") },
             { 0x0017, new ChatType(0x0017, ChatFormat_LS,       "#d4ff7d", "링크셸 8") },
             { 0x001d, new ChatType(0x001d, ChatFormat_TxtOnly,  "#bafff0", "감정표현") },
-            { 0x2245, new ChatType(0x2245, ChatFormat_TxtOnly,  "#e5fffc", "자유부대 알림") },
-            { 0x2246, new ChatType(0x2246, ChatFormat_TxtOnly,  "#e5fffc", "자유부대원 접속") },
+            { 0x2245, new ChatType(0x2245, ChatFormat_TxtOnly,  "#abdbe5", "자유부대 알림") },
+            { 0x2246, new ChatType(0x2246, ChatFormat_TxtOnly,  "#abdbe5", "자유부대원 접속") },
             { 0x2040, new ChatType(0x2040, ChatFormat_TxtOnly,  "#edf49a", "업적달성") },
         };
 
