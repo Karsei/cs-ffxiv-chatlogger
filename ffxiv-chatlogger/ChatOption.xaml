@@ -32,7 +32,13 @@
                                       Width="413"
                                       Margin="10,5,0,0"
                                       Height="21"/>
-                            <Button Content="재설정" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="440,4,0,0"/>
+                            <Button Content="재설정" 
+                                    x:Name="op_btnResetProcess"
+                                    Click="op_btnResetProcess_Click"
+                                    HorizontalAlignment="Left" 
+                                    VerticalAlignment="Top" 
+                                    Width="75" 
+                                    Margin="440,4,0,0"/>
                         </Grid>
                     </GroupBox>
                     <GroupBox Grid.Row="1" Header="번역 API" HorizontalAlignment="Left" Height="188" Margin="0,11,0,-94" VerticalAlignment="Top" Width="537">

@@ -175,5 +175,10 @@ namespace ffxiv_chatlogger
         {
             this.Hide();
         }
+
+        private void op_btnResetProcess_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

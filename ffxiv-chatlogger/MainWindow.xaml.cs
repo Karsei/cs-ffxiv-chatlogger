@@ -1,20 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
-using System.Windows.Documents;
-using WinForms = System.Windows.Forms;
-using System.Windows.Threading;
 using System.ComponentModel;
-using System.Runtime.InteropServices;
-using MahApps.Metro.Controls;
 using System.Windows.Interop;
-using static ffxiv_chatlogger.Settings;
-using System.Reflection;
+using MahApps.Metro.Controls;
+using WinForms = System.Windows.Forms;
 
 namespace ffxiv_chatlogger
 {
@@ -24,45 +15,16 @@ namespace ffxiv_chatlogger
     public partial class MainWindow : MetroWindow
     {
         //private DispatcherTimer timer;
-        //private WinForms.NotifyIcon notify;
-        private bool m_isExplicitClose = false;
+
         //private IntPtr m_hookHwnd;
         //private NativeMethods.WinEventDelegate m_hookProc;
 
         private readonly ICollectionView m_chatList;
 
+        private bool m_isExplicitClose = false;
         private bool m_listIsBottom = false;
 
         public static MainWindow Instance { get; private set; }
-        //private static Settings sett = new Settings();
-
-        /****************************************************
-         * DLL 기본
-        *****************************************************/
-        static class NativeMethods
-        {
-            public delegate void WinEventDelegate(IntPtr hWinEventHook, uint eventType, IntPtr hwnd, int idObject, int idChild, uint dwEventThread, uint dwmsEventTime);
-
-            [DllImport("user32.dll")]
-            public static extern IntPtr SetWinEventHook(uint eventMin, uint eventMax, IntPtr hmodWinEventProc, WinEventDelegate lpfnWinEventProc, uint idProcess, uint idThread, uint dwFlags);
-
-            [DllImport("user32.dll")]
-            public static extern bool UnhookWinEvent(IntPtr hWinEventHook);
-
-            [DllImport("user32.dll")]
-            public static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int X, int Y, int cx, int cy, uint uFlags);
-
-            [DllImport("user32.dll")]
-            public static extern IntPtr FindWindow(String lpClassName, String lpWindowName);
-
-            // 항상 위 관련
-            public const int EVENT_SYSTEM_FOREGROUND = 3;
-            public const int WINEVENT_OUTOFCONTEXT = 0;
-            public const int WINEVENT_SKIPOWNPROCESS = 2;
-            public const int HWND_TOPMOST = -1;
-            public const int SWP_SHOWWINDOW = 0x0040;
-            public const int SWP_HIDEWINDOW = 0x0080;
-        }
 
         /****************************************************
          * 초기
@@ -112,6 +74,7 @@ namespace ffxiv_chatlogger
                 WinForms.MenuItem item_show = new WinForms.MenuItem();
                 WinForms.MenuItem item_option = new WinForms.MenuItem();
                 WinForms.MenuItem item_top = new WinForms.MenuItem();
+                WinForms.MenuItem item_clickthru = new WinForms.MenuItem();
                 WinForms.MenuItem item_about = new WinForms.MenuItem();
                 WinForms.MenuItem item_sep = new WinForms.MenuItem();
                 WinForms.MenuItem item_sep2 = new WinForms.MenuItem();
@@ -150,17 +113,31 @@ namespace ffxiv_chatlogger
                     {
                         item_top.Checked = false;
                         this.Topmost = false;
-
-                        //NativeMethods.SetWindowPos(NativeMethods.FindWindow("Shell_traywnd", ""), IntPtr.Zero, 0, 0, 0, 0, NativeMethods.SWP_SHOWWINDOW);
-                        //NativeMethods.UnhookWinEvent(this.m_hookHwnd);
                     }
                     else
                     {
                         item_top.Checked = true;
                         this.Topmost = true;
+                    }
+                };
 
-                        //NativeMethods.SetWindowPos(NativeMethods.FindWindow("Shell_traywnd", ""), IntPtr.Zero, 0, 0, 0, 0, NativeMethods.SWP_HIDEWINDOW);
-                        //this.m_hookHwnd = NativeMethods.SetWinEventHook(NativeMethods.EVENT_SYSTEM_FOREGROUND, NativeMethods.EVENT_SYSTEM_FOREGROUND, IntPtr.Zero, this.m_hookProc, 0, 0, NativeMethods.WINEVENT_SKIPOWNPROCESS | NativeMethods.WINEVENT_OUTOFCONTEXT);
+                item_clickthru.Index = 0;
+                item_clickthru.Text = "클릭 무시";
+                item_clickthru.Click += delegate (object click, EventArgs eClick)
+                {
+                    if (item_clickthru.Checked)
+                    {
+                        item_clickthru.Checked = false;
+                        IntPtr wHandle = new WindowInteropHelper(Application.Current.MainWindow).Handle;
+                        int winState = BaseMethod.GetWindowLong(wHandle, BaseMethod.GWL_EXSTYLE);
+                        BaseMethod.SetWindowLong(wHandle, BaseMethod.GWL_EXSTYLE, winState & ~BaseMethod.WS_EX_LAYERED & ~BaseMethod.WS_EX_TRANSPARENT);
+                    }
+                    else
+                    {
+                        item_clickthru.Checked = true;
+                        IntPtr wHandle = new WindowInteropHelper(Application.Current.MainWindow).Handle;
+                        int winState = BaseMethod.GetWindowLong(wHandle, BaseMethod.GWL_EXSTYLE);
+                        BaseMethod.SetWindowLong(wHandle, BaseMethod.GWL_EXSTYLE, winState | BaseMethod.WS_EX_LAYERED | BaseMethod.WS_EX_TRANSPARENT);
                     }
                 };
 
@@ -179,8 +156,6 @@ namespace ffxiv_chatlogger
                 item_option.Text = "옵션";
                 item_option.Click += delegate (object click, EventArgs eClick)
                 {
-                    /*this.Show();
-                    this.WindowState = WindowState.Normal;*/
                     var ChatOption = new ChatOption() { /* Owner = this */ };
                     ChatOption.Show();
                 };
@@ -205,6 +180,7 @@ namespace ffxiv_chatlogger
                 menu.MenuItems.Add(item_show);
                 menu.MenuItems.Add(item_sep2);
                 menu.MenuItems.Add(item_top);
+                menu.MenuItems.Add(item_clickthru);
                 menu.MenuItems.Add(item_clear);
                 menu.MenuItems.Add(item_option);
                 menu.MenuItems.Add(item_sep);
@@ -274,6 +250,7 @@ namespace ffxiv_chatlogger
         {
             if (e.ButtonState == System.Windows.Input.MouseButtonState.Pressed)
             {
+                // 윈도우 이동
                 BaseMethod.ReleaseCapture();
                 BaseMethod.SendMessage(new WindowInteropHelper(this).Handle, BaseMethod.WM_NCLBUTTONDOWN, BaseMethod.HT_CAPTION, 0);
             }
