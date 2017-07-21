@@ -10,13 +10,19 @@
         ShowMinButton="False"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
-        Title="정보" Height="194.452" Width="330"
+        Title="정보" Height="260.452" Width="448"
         
         BorderBrush="{DynamicResource AccentColorBrush}"
         BorderThickness="1">
     <Grid>
-        <Label Content="FFXIV CHAT LOGGER (v1.0)" HorizontalAlignment="center" VerticalAlignment="center" Margin="83,39,81,98" Width="158"/>
-        <Label FontSize="10" Content="마우스의 모든 버튼을 클릭하면 이동됩니다." HorizontalAlignment="center" VerticalAlignment="center" Margin="60,75,53,64" Width="209" Height="24"/>
-        <Label Content="ⓒ 2017 Karsei" HorizontalAlignment="center" VerticalAlignment="Top" Margin="116,114,117,0"/>
+        <Label FontSize="20" Content="FFXIV CHAT LOGGER" HorizontalContentAlignment="Center" HorizontalAlignment="center" VerticalAlignment="center" Margin="10,7,10,189" Width="420" Height="33"/>
+        <Label FontSize="11" Content="(v1.0.0.1 Beta)" HorizontalContentAlignment="Center" HorizontalAlignment="center" VerticalAlignment="center" Margin="69,34,69,170" Width="302" Height="25"/>
+        <Label FontSize="14" Content="DirectX 11 환경에서의 FFXIV 4.X 버전만 지원합니다." HorizontalContentAlignment="Center" HorizontalAlignment="center" VerticalAlignment="center" Width="420" Height="30" Margin="10,76,10,123"/>
+        <Label FontSize="12" Content="설정 창에서 번역 서비스의 API키를 입력하여 원문을 번역할 수 있습니다." HorizontalContentAlignment="Center" HorizontalAlignment="center" VerticalAlignment="center" Width="420" Height="30" Margin="10,66,10,73"/>
+        <Label FontSize="14" Content="오버레이 창은 마우스의 모든 버튼을 클릭하면 이동됩니다." HorizontalContentAlignment="Center" HorizontalAlignment="center" VerticalAlignment="center" Width="420" Height="30" Margin="10,128,10,68"/>
+        
+        <Label Content="ⓒ 2017 Karsei" HorizontalContentAlignment="Center" HorizontalAlignment="center" VerticalAlignment="Top" Margin="10,165,10,0" Width="420"/>
+        <Label FontSize="10" Content="(문의. karsei5072@gmail.com, https://bitbucket.org/Karsei/ffxiv-chatlogger)" HorizontalContentAlignment="Center" HorizontalAlignment="center" VerticalAlignment="center" Width="420" Height="30" Margin="10,181,10,18"/>
+        <Label FontSize="10" Content="무단 복제, 재배포, 프로그램 수정 등을 금지합니다." HorizontalContentAlignment="Center" HorizontalAlignment="center" VerticalAlignment="center" Width="420" Height="30" Margin="10,197,10,2"/>
     </Grid>
 </Controls:MetroWindow>

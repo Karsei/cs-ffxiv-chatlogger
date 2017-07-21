@@ -21,6 +21,10 @@ namespace ffxiv_chatlogger
             Console.WriteLine("[{0:yyyy/MM/dd HH:mm:ss}][정보] {1}", DateTime.Now, String.Format(msg, arg0, arg1));
         }
 
+        public static void Error(string msg)
+        {
+            Console.WriteLine("[{0:yyyy/MM/dd HH:mm:ss}][오류] {1}", DateTime.Now, msg);
+        }
         public static void Error(string msg, Exception e)
         {
             Console.WriteLine("[{0:yyyy/MM/dd HH:mm:ss}][오류] {1}", DateTime.Now, msg);

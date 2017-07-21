@@ -20,7 +20,11 @@ namespace ffxiv_chatlogger
             public string googleAPIKey;
             public string sourceLang;
             public string destLang;
-            public bool? enableTransService;
+            public int enableTransService;
+            public string overlayFontName;
+            public int overlayFontSize;
+            public string overlayFontStyle;
+            public string overlayFontWeight;
             //public ICollection<ChatType> chatFilter;
             //public ICollection<ChatType> transFilter;
         }
@@ -57,7 +61,11 @@ namespace ffxiv_chatlogger
                 globalSetting.googleAPIKey = "";
                 globalSetting.sourceLang = "ko";
                 globalSetting.destLang = "ja";
-                globalSetting.enableTransService = false;
+                globalSetting.enableTransService = 0;
+                globalSetting.overlayFontName = "돋움";
+                globalSetting.overlayFontSize = 10;
+                globalSetting.overlayFontStyle = "normal";
+                globalSetting.overlayFontWeight = "normal";
                 //sf.transFilter = ChatType.TypeList.Values;
 
                 Save(globalSetting);

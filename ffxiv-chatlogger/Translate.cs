@@ -98,9 +98,10 @@ namespace ffxiv_chatlogger
             }
             catch (Exception e)
             {
-                Logger.notify.BalloonTipText = "번역에 오류가 발생했습니다. 자세한 사항은 로그를 참고하세요.";
-                Logger.notify.ShowBalloonTip(1000);
+                //Logger.notify.BalloonTipText = "번역에 오류가 발생했습니다. 자세한 사항은 로그를 참고하세요.";
+                //Logger.notify.ShowBalloonTip(1000);
                 LogWriter.Error("번역 과정에서 오류가 발생했습니다.", e);
+                LogWriter.Info("클라이언트 키: " + service.ClientKey);
             }
 
             return "(번역 오류 발생)";

@@ -9,147 +9,77 @@
                       
         Title="옵션" 
         Height="409"
-        Width="561"
+        Width="815"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
         
         BorderBrush="{DynamicResource AccentColorBrush}"
         BorderThickness="1">
     <Grid>
-        <TabControl HorizontalAlignment="Left" Height="325" VerticalAlignment="Top" Width="543" Margin="5,5,0,0">
+        <TabControl HorizontalAlignment="Left" Height="325" VerticalAlignment="Top" Width="787" Margin="10,5,0,0">
             <TabItem Header="일반">
-                <Grid Background="White">
+                <Grid Background="White" Margin="0,0,-5,0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="80" />
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
-                    <GroupBox Grid.Row="0" Header="프로세스" HorizontalAlignment="Left" Height="75" Margin="0,1,0,0" VerticalAlignment="Top" Width="537">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="552"/>
+                        <ColumnDefinition Width="Auto" MinWidth="41"/>
+                    </Grid.ColumnDefinitions>
+                    <GroupBox Grid.Row="0" Header="프로세스" HorizontalAlignment="Left" Height="75" Margin="0,1,-187,0" VerticalAlignment="Top" Width="786" Grid.ColumnSpan="2">
                         <Grid>
                             <ComboBox x:Name="op_listProcess"
                                       x:FieldModifier="public"
                                       HorizontalAlignment="Left"
                                       VerticalAlignment="Top"
-                                      Width="413"
+                                      Width="568"
                                       Margin="10,5,0,0"
                                       Height="21"/>
-                            <Button Content="재설정" 
+                            <Button Content="선택" 
+                                    x:Name="op_btnSetProcess"
+                                    Click="op_btnSetProcess_Click"
+                                    HorizontalAlignment="Left" 
+                                    VerticalAlignment="Top" 
+                                    Width="75" 
+                                    Margin="583,4,0,0"/>
+                            <Button Content="다시 찾기" 
                                     x:Name="op_btnResetProcess"
                                     Click="op_btnResetProcess_Click"
                                     HorizontalAlignment="Left" 
                                     VerticalAlignment="Top" 
                                     Width="75" 
-                                    Margin="440,4,0,0"/>
+                                    Margin="689,5,0,0"/>
                         </Grid>
                     </GroupBox>
-                    <GroupBox Grid.Row="1" Header="번역 API" HorizontalAlignment="Left" Height="188" Margin="0,11,0,-94" VerticalAlignment="Top" Width="537">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="100"/>
-                                <ColumnDefinition Width="Auto"/>
-                            </Grid.ColumnDefinitions>
-                            <Label Grid.Column="0" Content="서비스 종류" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,10,0,0"/>
-                            <ComboBox Grid.Column="1" 
-                                      x:FieldModifier="public"
-                                      x:Name="op_listAPIService"
-                                      HorizontalAlignment="Left" 
-                                      VerticalAlignment="Top" 
-                                      SelectionChanged="op_listAPIService_SelectionChanged"
-                                      Width="404" 
-                                      Margin="10,10,-292,0">
-                                <ItemsControl.ItemTemplate>
-                                    <DataTemplate>
-                                        <TextBlock Text="{Binding Path=GetName}"/>
-                                    </DataTemplate>
-                                </ItemsControl.ItemTemplate>
-                            </ComboBox>
-                            <Label Grid.Column="0" 
-                                   Content="Client(API) 키" 
-                                   x:Name="op_APIKey_Label"
-                                   Visibility="Hidden"
-                                   HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,43,10,0" RenderTransformOrigin="0.318,0.462"/>
-                            <Label Grid.Column="0" 
-                                   Content="Secret 키" 
-                                   x:Name="op_APISecretKey_Label"
-                                   Visibility="Hidden"
-                                   HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,77,10,0"/>
-                            <TextBox Grid.Column="1" 
-                                     x:FieldModifier="public"
-                                     x:Name="op_APIKey_Naver"
-                                     Visibility="Hidden"
-                                     HorizontalAlignment="Left" 
-                                     Height="23" 
-                                     Margin="10,43,-154,0" 
-                                     TextWrapping="Wrap" 
-                                     VerticalAlignment="Top" 
-                                     Width="270"/>
-                            <TextBox Grid.Column="1" 
-                                     x:FieldModifier="public"
-                                     x:Name="op_APIKey_Google"
-                                     Visibility="Hidden"
-                                     HorizontalAlignment="Left" 
-                                     Height="23" 
-                                     Margin="10,43,-154,0" 
-                                     TextWrapping="Wrap" 
-                                     VerticalAlignment="Top" 
-                                     Width="270"/>
-                            <TextBox Grid.Column="1" 
-                                     x:FieldModifier="public"
-                                     x:Name="op_APISecretKey"
-                                     Visibility="Hidden"
-                                     HorizontalAlignment="Left" 
-                                     Height="23" 
-                                     Margin="10,77,-155,0" 
-                                     TextWrapping="Wrap" 
-                                     VerticalAlignment="Top" 
-                                     Width="270"/>
-                            <Label Grid.Column="0" Content="언어 선택" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,111,10,0"/>
-                            <ComboBox Grid.Column="1" 
-                                      x:Name="op_apiSourceLang"
-                                      VerticalAlignment="Top" 
-                                      Margin="10,111,-4,0">
-                                <ItemsControl.ItemTemplate>
-                                    <DataTemplate>
-                                        <TextBlock Text="{Binding Path=GetName}"/>
-                                    </DataTemplate>
-                                </ItemsControl.ItemTemplate>
-                            </ComboBox>
-                            <Label Grid.Column="1" Content="→" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,110,-29,0"/>
-                            <ComboBox Grid.Column="1" 
-                                      x:Name="op_apiDestLang"
-                                      VerticalAlignment="Top" 
-                                      Margin="160,111,-154,0">
-                                <ItemsControl.ItemTemplate>
-                                    <DataTemplate>
-                                        <TextBlock Text="{Binding Path=GetName}"/>
-                                    </DataTemplate>
-                                </ItemsControl.ItemTemplate>
-                            </ComboBox>
-                            <Controls:ToggleSwitch Grid.Column="1" 
-                                                   x:Name="op_APISwitch"
-                                                   OnLabel="켜짐" 
-                                                   OffLabel="꺼짐" 
-                                                   Margin="304,104,-287,3"/>
-                        </Grid>
+                    <GroupBox Grid.Row="1" Grid.Column="0" Header="도움말" HorizontalAlignment="Left" Height="180" Margin="0,10,-189,0" VerticalAlignment="Top" Width="786" Grid.ColumnSpan="2">
+                        <TextBox HorizontalAlignment="Left" 
+                                 ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                                 TextWrapping="Wrap" 
+                                 VerticalAlignment="Top" 
+                                 Height="144" 
+                                 Margin="0,-3,-2,0" 
+                                 Width="776"
+                                 Text="[일반]&#x0a; - 프로세스를 설정하거나 재설정합니다.&#x0a; - 프로세스는 ffxiv.exe 또는 ffxiv_dx11.exe 만을 찾습니다.&#x0a;[필터 및 번역]&#x0a; - 오버레이에 출력되는 메시지 종류와 번역되기를 원하는 메세지 종류를 필터링합니다.&#x0a; - 번역 서비스는 네이버와 구글 API를 지원하고 있으며, 각 번역 서비스를 이용하기 위해서는 API키가 필요합니다.&#x0a; - 자세한 내용에 대해서는 프로그램과 같이 들어있는 설명서를 참고하세요.&#x0a;[오버레이]&#x0a; - 오버레이에 대한 설정을 변경할 수 있습니다.&#x0a; - 현재 폰트 변경과 투명도 설정만 지원합니다.&#x0a;"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
-            <TabItem Header="필터">
+            <TabItem Header="필터 및 번역">
                 <Grid Background="White">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="200"/>
-                        <ColumnDefinition Width="Auto" MinWidth="131"/>
-                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="155"/>
+                        <ColumnDefinition Width="39"/>
+                        <ColumnDefinition Width="155"/>
+                        <ColumnDefinition Width="39"/>
+                        <ColumnDefinition Width="155"/>
+                        <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
-                    <GroupBox Grid.Row="0" Grid.Column="0" Header="채팅 필터 목록" HorizontalAlignment="Left" Height="232" Margin="10,10,0,0" VerticalAlignment="Top" Width="190">
+                    <GroupBox Grid.Row="0" Grid.Column="0" Header="메세지 종류" HorizontalAlignment="Left" Height="275" Margin="3,1,0,0" VerticalAlignment="Top" Width="154" Grid.ColumnSpan="2">
                         <ListBox Grid.Row="0" 
                                  Grid.Column="0" 
-                                 x:Name="op_chatFilter"
+                                 x:Name="op_listChatType"
                                  HorizontalAlignment="Right" 
-                                 Width="179" 
+                                 Width="142" 
                                  Margin="-1,0,0,-1">
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate>
@@ -161,33 +91,74 @@
                     </GroupBox>
                     <Button Grid.Row="0" 
                             Grid.Column="1" 
+                            x:Name="op_btnGoLeft_ChatMsg"
+                            Content="◀" 
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Top" 
+                            Width="28" 
+                            Margin="4,161,0,0" 
+                            Height="115"
+                            Click="op_btnGoLeft_ChatMsg_Click"/>
+                    <Button Grid.Row="0" 
+                            Grid.Column="1" 
+                            x:Name="op_btnGoRight_ChatMsg"
+                            Content="▶" 
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Top" 
+                            Width="28" 
+                            Margin="5,1,0,0" 
+                            Height="112"
+                            Click="op_btnGoRight_ChatMsg_Click"/>
+                    <GroupBox Grid.Row="0" Grid.Column="2" Header="오버레이 메세지 출력" HorizontalAlignment="Left" Height="275" Margin="3,1,0,0" VerticalAlignment="Top" Width="154" Grid.ColumnSpan="2">
+                        <ListBox Grid.Row="0" 
+                                 Grid.Column="2" 
+                                 x:Name="op_chatFilter"
+                                 HorizontalAlignment="Right" 
+                                 Width="142" 
+                                 Margin="-1,0,0,-1">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=GetTag}"
+                                               />
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ListBox>
+                    </GroupBox>
+                    <Button Grid.Row="0" 
+                            Grid.Column="3" 
                             x:Name="op_btnGoLeft"
                             Content="◀" 
                             HorizontalAlignment="Center" 
                             VerticalAlignment="Top" 
-                            Width="74" 
-                            Margin="29,146,33,0" 
-                            Height="27"
+                            Width="28" 
+                            Margin="4,161,0,0" 
+                            Height="115"
                             Click="op_btnGoLeft_Click"/>
                     <Button Grid.Row="0" 
-                            Grid.Column="1" 
+                            Grid.Column="3" 
                             x:Name="op_btnGoRight"
                             Content="▶" 
                             HorizontalAlignment="Center" 
                             VerticalAlignment="Top" 
-                            Width="74" 
-                            Margin="29,103,33,0" 
-                            Height="27"
+                            Width="28" 
+                            Margin="5,1,0,0" 
+                            Height="112"
                             Click="op_btnGoRight_Click"/>
-                    <GroupBox Grid.Row="0" Grid.Column="2" Header="번역 적용 목록" HorizontalAlignment="Left" Height="232" Margin="0,10,0,0" VerticalAlignment="Top" Width="190">
+                    <GroupBox Grid.Row="0" Grid.Column="4" 
+                              Header="번역 적용 목록" 
+                              HorizontalAlignment="Left" 
+                              Height="275" 
+                              Margin="3,1,0,0" 
+                              VerticalAlignment="Top" 
+                              Width="154" Grid.ColumnSpan="2">
                         <ListBox Grid.Row="0" 
                                  Grid.Column="2" 
                                  x:Name="op_chatTransFilter"
                                  HorizontalAlignment="Right" 
-                                 Height="194" 
+                                 Height="238" 
                                  VerticalAlignment="Top" 
-                                 Width="179" 
-                                 Margin="-1,0,0,-1">
+                                 Width="142" 
+                                 Margin="0,0,0,-2">
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate>
                                     <TextBlock Text="{Binding Path=GetTag}"/>
@@ -196,29 +167,184 @@
                         </ListBox>
                     </GroupBox>
 
-                    <Button Grid.Row="1" 
-                            Grid.Column="2"
+                    <Button 
+                            Grid.Column="4"
                             x:Name="op_btnFilterApply"
                             Content="필터 갱신"
                             Visibility="Hidden"
                             HorizontalAlignment="Left"
                             VerticalAlignment="Top"
                             Width="75"
-                            Margin="115,8,0,0"/>
-                    <Button Grid.Row="1" 
+                            Margin="115,8,-35,0" Height="27"/>
+                    <Button 
                             Grid.Column="0"
                             x:Name="op_btnFilterToggle"
                             Visibility="Hidden"
-                            Content="활성/비활성" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,8,0,0"/>
+                            Content="활성/비활성" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,8,0,0" Height="27"/>
+                    <GroupBox Grid.Row="0" Grid.Column="5" Header="번역 서비스" HorizontalAlignment="Left" Height="275" Margin="10,1,-131,0" VerticalAlignment="Top" Width="223">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="33" />
+                                <RowDefinition Height="17" />
+                                <RowDefinition Height="27" />
+                                <RowDefinition Height="22" />
+                                <RowDefinition Height="30" />
+                                <RowDefinition Height="22" />
+                                <RowDefinition Height="30" />
+                                <RowDefinition Height="24" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Label Content="활성화" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="74" Grid.Row="0" Margin="-3,2,0,0"/>
+                            <Controls:ToggleSwitch 
+                                                   x:Name="op_APISwitch"
+                                                   Visibility="Visible"
+                                                   OnLabel="켜짐" 
+                                                   OffLabel="꺼짐" 
+                                                   Margin="110,-3,-5,0"
+                                                   Checked="op_APISwitch_Checked"
+                                                   Unchecked="op_APISwitch_Checked"/>
+                            <Label x:Name="op_APIService_Label" 
+                                   Content="서비스 종류" 
+                                   Visibility="Hidden"
+                                   HorizontalAlignment="Left" 
+                                   VerticalAlignment="Top" 
+                                   Height="31" Width="74" 
+                                   Margin="-3,28,0,0" 
+                                   Grid.RowSpan="3"/>
+                            <ComboBox 
+                                      x:FieldModifier="public"
+                                      x:Name="op_listAPIService"
+                                      Visibility="Hidden"
+                                      HorizontalAlignment="Left" 
+                                      VerticalAlignment="Top" 
+                                      SelectionChanged="op_listAPIService_SelectionChanged"
+                                      Width="208" Height="26" Grid.Row="2" Margin="1,0,0,0">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Path=GetName}"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ComboBox>
+                            <Label Grid.Row="3" 
+                                   Content="Client(API) 키" 
+                                   x:Name="op_APIKey_Label"
+                                   Visibility="Hidden"
+                                   HorizontalAlignment="Right" VerticalAlignment="Top" Margin="-3,0,131,0" RenderTransformOrigin="0.318,0.462" Height="31" Width="83" Grid.RowSpan="2"/>
+                            <TextBox 
+                                     x:FieldModifier="public"
+                                     x:Name="op_APIKey_Naver"
+                                     Visibility="Hidden"
+                                     HorizontalAlignment="Left" 
+                                     Height="26" 
+                                     Margin="1,1,0,0" 
+                                     TextWrapping="Wrap" 
+                                     VerticalAlignment="Top" 
+                                     Width="208" Grid.Row="4"/>
+                            <TextBox 
+                                     x:FieldModifier="public"
+                                     x:Name="op_APIKey_Google"
+                                     Visibility="Hidden"
+                                     HorizontalAlignment="Left" 
+                                     Height="26" 
+                                     Margin="1,1,0,0" 
+                                     TextWrapping="Wrap" 
+                                     VerticalAlignment="Top" 
+                                     Width="208" Grid.Row="4"/>
+                            <Label Grid.Row="5" 
+                                   Content="Secret 키" 
+                                   x:Name="op_APISecretKey_Label"
+                                   Visibility="Hidden"
+                                   HorizontalAlignment="Right" VerticalAlignment="Top" Margin="-3,0,154,0" Height="31" Width="60" Grid.RowSpan="2"/>
+                            <TextBox 
+                                     x:FieldModifier="public"
+                                     x:Name="op_APISecretKey"
+                                     Visibility="Hidden"
+                                     HorizontalAlignment="Left" 
+                                     Height="26" 
+                                     Margin="1,0,0,0" 
+                                     TextWrapping="Wrap" 
+                                     VerticalAlignment="Top" 
+                                     Width="208" Grid.Row="6"/>
+                            <Label x:Name="op_apiLangLabel"
+                                   Visibility="Hidden" 
+                                   Content="언어 선택" 
+                                   HorizontalAlignment="Right" 
+                                   VerticalAlignment="Top" 
+                                   Margin="-4,1,153,0" 
+                                   Height="31" Grid.Row="7" 
+                                   Width="62" Grid.RowSpan="2"/>
+                            <ComboBox 
+                                      x:Name="op_apiSourceLang_Naver"
+                                      VerticalAlignment="Top" 
+                                      Visibility="Hidden"
+                                      Margin="1,0,120,0" Height="26" Grid.Row="8">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Path=GetName}"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ComboBox>
+                            <Label x:Name="op_apiLangArrowLabel" 
+                                   Visibility="Hidden" 
+                                   Content="→" 
+                                   HorizontalAlignment="Right" 
+                                   VerticalAlignment="Top" 
+                                   Margin="0,25,96,-3" 
+                                   Height="31" 
+                                   Grid.Row="7" Width="21" Grid.RowSpan="2"/>
+                            <ComboBox 
+                                      x:Name="op_apiDestLang_Naver"
+                                      Visibility="Hidden" 
+                                      VerticalAlignment="Top" 
+                                      Margin="119,0,2,0" Height="26" Grid.Row="8">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Path=GetName}"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ComboBox>
+                            <ComboBox 
+                                      x:Name="op_apiDestLang_Google"
+                                      VerticalAlignment="Top" 
+                                      Visibility="Hidden"
+                                      Margin="1,0,120,0" Height="26" Grid.Row="8">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Path=GetName}"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ComboBox>
+                        </Grid>
+                    </GroupBox>
                 </Grid>
             </TabItem>
-            <TabItem Header="기타">
+            <TabItem Header="오버레이">
                 <Grid Background="White">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="133"/>
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
-                    <Label Grid.Column="0" Content="투명도" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="44,10,0,0"/>
+                    <Label Grid.Column="0" HorizontalContentAlignment="Right" Content="글꼴" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,22,0,0" Height="26" Width="113"/>
+                    <ComboBox x:Name="op_listFont"
+                                      x:FieldModifier="public"
+                                      HorizontalAlignment="Left"
+                                      VerticalAlignment="Top"
+                                      SelectionChanged="op_listFont_SelectionChanged"
+                                      Width="218"
+                                      Margin="10,22,0,0"
+                                      Height="26" Grid.Column="1"/>
+                    <ComboBox x:Name="op_listFontSize"
+                                      x:FieldModifier="public"
+                                      HorizontalAlignment="Left"
+                                      VerticalAlignment="Top"
+                                      SelectionChanged="op_listFontSize_SelectionChanged"
+                                      Width="59"
+                                      Margin="233,22,0,0"
+                                      Height="26" Grid.Column="1"/>
+                    <CheckBox x:Name="op_listFontStyle" Checked="op_listFontStyle_Checked" Unchecked="op_listFontStyle_Checked" Content="기울임" Grid.Column="1" HorizontalAlignment="Left" Margin="297,26,0,0" VerticalAlignment="Top" Height="18" Width="60"/>
+                    <CheckBox x:Name="op_listFontWeight" Checked="op_listFontWeight_Checked" Unchecked="op_listFontWeight_Checked" Content="굵게" Grid.Column="1" HorizontalAlignment="Left" Margin="363,26,0,0" VerticalAlignment="Top" Height="18" Width="48"/>
+                    <Label Grid.Column="1" x:Name="op_FontStyleTestLabel" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="ClearType" RenderOptions.ClearTypeHint="Enabled" Content="[자유부대] 테스트문장 님이 접속하였습니다." HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,64,0,0" Width="401" Height="52"/>
+                    <Label Grid.Column="0" Content="투명도" HorizontalContentAlignment="Right" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,126,0,0" Height="26" Width="113"/>
                     <Slider Grid.Column="1"
                             x:FieldModifier="public"
                             x:Name="op_slOpacity"
@@ -226,16 +352,36 @@
                             Style="{DynamicResource FlatSlider}"
                             HorizontalAlignment="Left"
                             VerticalAlignment="Top"
-                            Margin="10,16,0,0"
-                            Width="417"
-                            Height="9"
+                            Margin="10,132,0,0"
+                            Width="400"
+                            Height="12"
                             Minimum="0"
                             Maximum="100"
                             ValueChanged="Slider_ValueChanged"/>
+                    <Label Grid.Column="0" Content="항상 위" HorizontalContentAlignment="Right" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,170,0,0" Height="26" Width="113"/>
+                    <Controls:ToggleSwitch x:Name="op_SwitchTopMost"
+                                           Grid.Column="1"
+                                           Visibility="Visible"
+                                           IsEnabled="False"
+                                           OnLabel="켜짐" 
+                                           OffLabel="꺼짐" 
+                                           Margin="10,165,524,82"
+                                           Checked="op_SwitchTopMost_Checked"
+                                           Unchecked="op_SwitchTopMost_Checked"/>
+                    <Label Grid.Column="0" Content="항상 클릭 무시" HorizontalContentAlignment="Right" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,214,0,0" Height="26" Width="113"/>
+                    <Controls:ToggleSwitch x:Name="op_SwitchClickThru"
+                                           Grid.Column="1"
+                                           Visibility="Visible"
+                                           IsEnabled="False"
+                                           OnLabel="켜짐" 
+                                           OffLabel="꺼짐" 
+                                           Margin="10,209,524,38"
+                                           Checked="op_SwitchClickThru_Checked"
+                                           Unchecked="op_SwitchClickThru_Checked"/>
                 </Grid>
             </TabItem>
         </TabControl>
-        <Button Content="저장" Click="Button_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="378,341,0,0"/>
-        <Button Content="취소" Click="Button_Click_1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="468,341,0,0"/>
+        <Button Content="저장" Click="Button_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="632,341,0,0"/>
+        <Button Content="취소" Click="Button_Click_1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="722,341,0,0"/>
     </Grid>
 </Controls:MetroWindow>

@@ -16,6 +16,11 @@
         ShowCloseButton="False"
         Background="Black"
         WindowStyle="None"
+        
+        TextOptions.TextFormattingMode="Display"
+        TextOptions.TextRenderingMode="ClearType"
+        RenderOptions.ClearTypeHint="Enabled"
+        
         Title="FFXIV 채팅 수집" Height="400" Width="600">
     <ScrollViewer x:Name="svChatLog"
                   Background="Black"

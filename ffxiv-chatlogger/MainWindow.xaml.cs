@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Windows.Interop;
 using MahApps.Metro.Controls;
 using WinForms = System.Windows.Forms;
+using System.Windows.Media;
 
 namespace ffxiv_chatlogger
 {
@@ -46,7 +47,11 @@ namespace ffxiv_chatlogger
 
             // 목록 추가
             this.m_chatList = CollectionViewSource.GetDefaultView(Logger.ChatLog);
+            
+            // 채팅 로그 컴포넌트에 목록 삽입
             this.svChatList.ItemsSource = m_chatList;
+            // 채팅 로그 폰트 설정
+            SetFont(Settings.globalSetting.overlayFontName, Settings.globalSetting.overlayFontSize, Settings.globalSetting.overlayFontStyle, Settings.globalSetting.overlayFontWeight);
         }
 
         /****************************************************
@@ -192,8 +197,8 @@ namespace ffxiv_chatlogger
                 timer.Interval = new TimeSpan(0, 0, 2);
                 timer.Tick += new EventHandler(timer_Tick);
                 timer.Start();*/
-                Logger.notify.BalloonTipText = "시스템 트레이에서 이용하세요.";
-                Logger.notify.ShowBalloonTip(1000);
+                //Logger.notify.BalloonTipText = "시스템 트레이에서 이용하세요.";
+                //Logger.notify.ShowBalloonTip(1000);
             }
             catch
             {
@@ -204,6 +209,50 @@ namespace ffxiv_chatlogger
             //notify.BalloonTipTitle = "FFXIV Chat Logger";
             //notify.BalloonTipText = "시스템 트레이에서 이용할 수 있습니다!";
             //notify.ShowBalloonTip(1000);
+        }
+
+        /****************************************************
+         * 폰트
+        *****************************************************/
+        public void SetFont(string name, int size, string style = "", string weight = "")
+        {
+            FontStyle setstyle;
+            FontWeight setweight;
+
+            this.svChatList.FontFamily = new FontFamily(name);
+            this.svChatList.FontSize = size;
+            switch (style)
+            {
+                case "italic":
+                    setstyle = FontStyles.Italic;
+                    break;
+                default:
+                    setstyle = FontStyles.Normal;
+                    break;
+            }
+            this.svChatList.FontStyle = setstyle;
+            switch (weight)
+            {
+                case "extralight":
+                    setweight = FontWeights.ExtraLight;
+                    break;
+                case "light":
+                    setweight = FontWeights.Light;
+                    break;
+                case "semibold":
+                    setweight = FontWeights.SemiBold;
+                    break;
+                case "extrabold":
+                    setweight = FontWeights.ExtraBold;
+                    break;
+                case "regular":
+                    setweight = FontWeights.Regular;
+                    break;
+                default:
+                    setweight = FontWeights.Normal;
+                    break;
+            }
+            this.svChatList.FontWeight = setweight;
         }
 
         /****************************************************
