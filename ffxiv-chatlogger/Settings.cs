@@ -63,7 +63,7 @@ namespace ffxiv_chatlogger
                 globalSetting.destLang = "ja";
                 globalSetting.enableTransService = 0;
                 globalSetting.overlayFontName = "돋움";
-                globalSetting.overlayFontSize = 10;
+                globalSetting.overlayFontSize = 12;
                 globalSetting.overlayFontStyle = "normal";
                 globalSetting.overlayFontWeight = "normal";
                 //sf.transFilter = ChatType.TypeList.Values;
